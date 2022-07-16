@@ -571,6 +571,18 @@ header {
 	}
 }
 
+.disabled-button {
+	opacity: 0.5;
+	cursor: pointer;
+	&:hover{
+		background-color: var(--back-color);
+		color: var(--font-color);
+		img {
+			filter: none;
+		}
+	}
+}
+
 /*************** SKILLS PART *****************/
 .skills-container {
 	display: flex;

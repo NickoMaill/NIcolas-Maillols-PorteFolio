@@ -2,17 +2,17 @@
 /******************** FONT **********************/
 @font-face {
   font-family: "Montserrat";
-  src: url(../assets/font/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(../assets/font/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat italic";
-  src: url(../assets/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../assets/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "DePixel";
-  src: url(../assets/font/depixel/DePixelBreit.ttf);
+  src: url(../assets/font/depixel/DePixelBreit.ttf) format("truetype");
 }
 
 /******************** VARIABLE **********************/
@@ -688,6 +688,21 @@ header {
 .project-button:hover img {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.disabled-button {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.disabled-button:hover {
+  background-color: var(--back-color);
+  color: var(--font-color);
+}
+
+.disabled-button:hover img {
+  -webkit-filter: none;
+          filter: none;
 }
 
 /*************** SKILLS PART *****************/
