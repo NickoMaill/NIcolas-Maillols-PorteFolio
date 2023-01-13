@@ -94,7 +94,7 @@ html {
 	margin: 0;
 	padding: 0;
 	font-family: var(--main-font);
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 body {
@@ -159,6 +159,116 @@ nav {
 	ul {
 		list-style: none;
 		display: flex;
+	}
+}
+
+.display-none {
+	display: none !important;
+}
+
+/******************** SPINNER **********************/
+
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/******************** TOAST **********************/
+
+.toast {
+	box-shadow: 5px 5px 5px #ffffff6d;
+	background-color: #ffffff;
+	width: 90%;
+	border-radius: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	z-index: 10;
+	margin: 1rem;
+	padding: 0.5rem;
+}
+
+.toast-icon {
+	width: 5rem;
+	margin-right: 1rem;
+}
+
+.toast-message {
+	color: var(--back-color);
+	font-style: normal;
+	font-size: 1.3rem;
+}
+
+.toast-close {
+	opacity: 0.8;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 28px;
+	width: 28px;
+	margin: 0.5rem;
+}
+
+.toast-on {
+	animation: toastOn 700ms ease-in-out forwards;
+}
+
+@keyframes toastOn {
+	from {
+		right: -100%;
+	}
+
+	to {
+		right: 0rem;
+	}
+}
+
+.toast-off {
+	animation: toastOff 700ms ease-in-out forwards;
+}
+
+@keyframes toastOff {
+	from {
+		right: 0rem;
+	}
+
+	to {
+		right: -100%;
 	}
 }
 
@@ -357,37 +467,37 @@ header {
 	animation: slideInRight 12.5s;
 }
 
-@keyframes slideInLeft {
-	from {
-		margin-left: 200%;
-		opacity: 0;
-	}
+// @keyframes slideInLeft {
+// 	from {
+// 		margin-left: 200%;
+// 		opacity: 0;
+// 	}
 
-	80% {
-		margin-left: 200%;
-		opacity: 1;
-	}
+// 	80% {
+// 		margin-left: 200%;
+// 		opacity: 1;
+// 	}
 
-	to {
-		margin-left: 0;
-	}
-}
+// 	to {
+// 		margin-left: 0;
+// 	}
+// }
 
-@keyframes slideInRight {
-	from {
-		margin-right: 200%;
-		opacity: 0;
-	}
+// @keyframes slideInRight {
+// 	from {
+// 		margin-right: 200%;
+// 		opacity: 0;
+// 	}
 
-	80% {
-		margin-right: 200%;
-		opacity: 1;
-	}
+// 	80% {
+// 		margin-right: 200%;
+// 		opacity: 1;
+// 	}
 
-	to {
-		margin-right: 0;
-	}
-}
+// 	to {
+// 		margin-right: 0;
+// 	}
+// }
 
 .photo-container {
 	display: flex;
@@ -401,21 +511,21 @@ header {
 	animation: slideDown 12.5s;
 }
 
-@keyframes slideDown {
-	from {
-		margin-top: 100%;
-		opacity: 0;
-	}
+// @keyframes slideDown {
+// 	from {
+// 		margin-top: 100%;
+// 		opacity: 0;
+// 	}
 
-	80% {
-		opacity: 1;
-		margin-top: 100%;
-	}
+// 	80% {
+// 		opacity: 1;
+// 		margin-top: 100%;
+// 	}
 
-	to {
-		margin-top: 0;
-	}
-}
+// 	to {
+// 		margin-top: 0;
+// 	}
+// }
 
 .exp,
 .school-part,
@@ -424,25 +534,25 @@ header {
 	animation: showContent 13.5s;
 }
 
-@keyframes showContent {
-	from {
-		opacity: 0;
-	}
+// @keyframes showContent {
+// 	from {
+// 		opacity: 0;
+// 	}
 
-	80% {
-		opacity: 0;
-	}
+// 	80% {
+// 		opacity: 0;
+// 	}
 
-	to {
-		opacity: 1;
-	}
-}
+// 	to {
+// 		opacity: 1;
+// 	}
+// }
 
 .intro-text {
 	font-size: 2rem;
 	width: 80%;
 	p {
-		text-align: justify
+		text-align: justify;
 	}
 }
 
@@ -580,7 +690,7 @@ header {
 .disabled-button {
 	opacity: 0.5;
 	cursor: pointer;
-	&:hover{
+	&:hover {
 		background-color: var(--back-color);
 		color: var(--font-color);
 		img {
@@ -623,7 +733,8 @@ header {
 
 /*************** EXPERIENCES PART *****************/
 
-.exp, .school-part {
+.exp,
+.school-part {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -743,6 +854,10 @@ header {
 	}
 }
 
+.submit-button {
+	cursor: pointer;
+}
+
 /************* FOOTER ************/
 
 footer {
@@ -812,7 +927,7 @@ footer {
 		display: none;
 	}
 
-	.exp-part{
+	.exp-part {
 		margin-left: 1rem;
 	}
 
@@ -1018,8 +1133,6 @@ footer {
 			text-align: center;
 		}
 	}
-
-
 }
 
 @media screen and (max-width: 355px) {
@@ -1035,13 +1148,13 @@ footer {
 		right: 2.8rem;
 	}
 
-	.exp-left{
+	.exp-left {
 		margin-left: 2rem;
 	}
 }
 
 @media screen and (max-width: 375px) {
-	h2{
+	h2 {
 		font-size: 1.5rem;
 	}
 

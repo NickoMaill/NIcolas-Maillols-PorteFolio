@@ -124,6 +124,162 @@ nav ul {
   display: flex;
 }
 
+.display-none {
+  display: none !important;
+}
+
+/******************** SPINNER **********************/
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/******************** TOAST **********************/
+.toast {
+  -webkit-box-shadow: 5px 5px 5px #ffffff6d;
+          box-shadow: 5px 5px 5px #ffffff6d;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.toast-icon {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+.toast-message {
+  color: var(--back-color);
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+.toast-close {
+  opacity: 0.8;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28px;
+  width: 28px;
+  margin: 0.5rem;
+}
+
+.toast-on {
+  -webkit-animation: toastOn 700ms ease-in-out forwards;
+          animation: toastOn 700ms ease-in-out forwards;
+}
+
+@-webkit-keyframes toastOn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0rem;
+  }
+}
+
+@keyframes toastOn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0rem;
+  }
+}
+
+.toast-off {
+  -webkit-animation: toastOff 700ms ease-in-out forwards;
+          animation: toastOff 700ms ease-in-out forwards;
+}
+
+@-webkit-keyframes toastOff {
+  from {
+    right: 0rem;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes toastOff {
+  from {
+    right: 0rem;
+  }
+  to {
+    right: -100%;
+  }
+}
+
 /******************** SPLASH **********************/
 .splash {
   position: fixed;
@@ -437,62 +593,6 @@ header {
           animation: slideInRight 12.5s;
 }
 
-@-webkit-keyframes slideInLeft {
-  from {
-    margin-left: 200%;
-    opacity: 0;
-  }
-  80% {
-    margin-left: 200%;
-    opacity: 1;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    margin-left: 200%;
-    opacity: 0;
-  }
-  80% {
-    margin-left: 200%;
-    opacity: 1;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-
-@-webkit-keyframes slideInRight {
-  from {
-    margin-right: 200%;
-    opacity: 0;
-  }
-  80% {
-    margin-right: 200%;
-    opacity: 1;
-  }
-  to {
-    margin-right: 0;
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    margin-right: 200%;
-    opacity: 0;
-  }
-  80% {
-    margin-right: 200%;
-    opacity: 1;
-  }
-  to {
-    margin-right: 0;
-  }
-}
-
 .photo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,64 +610,12 @@ header {
           animation: slideDown 12.5s;
 }
 
-@-webkit-keyframes slideDown {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-    margin-top: 100%;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-    margin-top: 100%;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
 .exp,
 .school-part,
 .projects,
 .skills {
   -webkit-animation: showContent 13.5s;
           animation: showContent 13.5s;
-}
-
-@-webkit-keyframes showContent {
-  from {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showContent {
-  from {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .intro-text {
@@ -885,7 +933,8 @@ header {
 }
 
 /*************** EXPERIENCES PART *****************/
-.exp, .school-part {
+.exp,
+.school-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,6 +1142,10 @@ header {
 
 .form form textarea {
   resize: vertical;
+}
+
+.submit-button {
+  cursor: pointer;
 }
 
 /************* FOOTER ************/

@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	setTimeout(() => {
 		splash.classList.add("display-none");
 	}, 10000);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+	
 	setTimeout(() => {
 		progress.classList.add("display-none");
 	}, 5000);

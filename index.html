@@ -13,16 +13,13 @@
 	</head>
 
 	<body>
-		<!-- BACKGROUND SITE -->
-		<div id="particles-js"></div>
-
 		<!-- UP PAGE BUTTON -->
 		<div>
 			<a href="#"><img class="up-page" src="./assets/images/svg/up.svg" alt="" /></a>
 		</div>
 
 		<!-- SPLASH -->
-		<div class="splash" id="splash">
+		<!-- <div class="splash" id="splash">
 			<div id="progress" class="progress-container">
 				<div class="progress">
 					<div class="progress-value"></div>
@@ -32,7 +29,7 @@
 				</div>
 			</div>
 			<canvas id="matrix" class="matrix"></canvas>
-		</div>
+		</div> -->
 
 		<!-- HEADER -->
 		<header>
@@ -624,7 +621,8 @@
 							<input required placeholder="votre email" name="email" id="email" type="email" />
 							<input required placeholder="l'objet de votre message" name="subject" id="subject" type="text" />
 							<textarea required placeholder="votre message . . . " name="message" id="message" rows="10"></textarea>
-							<input id="submitButton" value="envoyer" type="submit" />
+							<input class="submit-button" id="submitButton" value="envoyer" type="submit" />
+							<div id="submitSpinner" class="lds-ring display-none"><div></div><div></div><div></div><div></div></div>
 						</form>
 					</div>
 				</section>
@@ -656,10 +654,13 @@
 				</a>
 			</div>
 		</footer>
+		<div id="toast" class="toast">
+			<img id="toastIcon" class="toast-icon" src="" alt="toast-icon">
+			<p id="toastMessage" class="toast-message"></p>
+			<button id="toastClose" class="toast-close-button">
+				<img class="toast-close" src="./assets/icons/cross.svg" alt="close">
+			</button>
+		</div>
 	</body>
 	<script src="./JS/index.js" lang="javascript"></script>
-	<script src="./JS/lib/particles.js" lang="javascript"></script>
-	<script src="./JS/lib/particles.min.js" lang="javascript"></script>
-	<script src="./JS/animation.js"></script>
-	<script src="./JS/lib/app.js" lang="javascript"></script>
 </html>
