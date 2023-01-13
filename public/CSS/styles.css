@@ -30,6 +30,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 *:not(ul) {
@@ -147,7 +148,7 @@ nav ul {
   color: var(--font-color);
   text-align: center;
   opacity: 0;
-  line-height: 80vh;
+  line-height: 100vh;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -436,6 +437,62 @@ header {
           animation: slideInRight 12.5s;
 }
 
+@-webkit-keyframes slideInLeft {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    margin-right: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-right: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    margin-right: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-right: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
 .photo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,12 +510,64 @@ header {
           animation: slideDown 12.5s;
 }
 
+@-webkit-keyframes slideDown {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
 .exp,
 .school-part,
 .projects,
 .skills {
   -webkit-animation: showContent 13.5s;
           animation: showContent 13.5s;
+}
+
+@-webkit-keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .intro-text {
@@ -1290,6 +1399,20 @@ footer {
   }
   .exp-ul li {
     margin-bottom: 0.8rem;
+  }
+  .progress {
+    right: 10rem;
+    width: 300px;
+  }
+  .typewriter {
+    position: relative;
+    right: 10rem;
+  }
+  .load-word {
+    font-size: 2rem;
+  }
+  .intro-text p {
+    text-align: center;
   }
 }
 
