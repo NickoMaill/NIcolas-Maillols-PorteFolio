@@ -87,6 +87,7 @@ html {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	// overflow-x: hidden;
 }
 
 *:not(ul) {
@@ -440,6 +441,9 @@ header {
 .intro-text {
 	font-size: 2rem;
 	width: 80%;
+	p {
+		text-align: justify
+	}
 }
 
 /************** TITLE SECTION **************/
@@ -462,8 +466,10 @@ header {
 
 .project-part {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// flex-wrap: wrap;
 }
 
 .project-container {
@@ -647,6 +653,12 @@ header {
 	}
 }
 
+.exp-ul {
+	li {
+		margin-bottom: 0.8rem;
+	}
+}
+
 .exp-icon {
 	display: flex;
 	position: relative;
@@ -748,6 +760,7 @@ footer {
 
 .icon {
 	margin-inline: 0.5rem;
+	width: 1.2rem;
 	transition: 300ms;
 	&:hover {
 		transform: scale(1.5);
@@ -981,6 +994,12 @@ footer {
 	.skills-icon-cotainer {
 		margin-bottom: 3rem;
 	}
+	.exp-ul {
+		padding: 0.5rem;
+		li {
+			margin-bottom: 0.8rem;
+		}
+	}
 }
 
 @media screen and (max-width: 355px) {
@@ -999,7 +1018,6 @@ footer {
 	.exp-left{
 		margin-left: 2rem;
 	}
-
 }
 
 @media screen and (max-width: 375px) {

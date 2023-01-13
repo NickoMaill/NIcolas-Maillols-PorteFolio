@@ -466,6 +466,10 @@ header {
   width: 80%;
 }
 
+.intro-text p {
+  text-align: justify;
+}
+
 /************** TITLE SECTION **************/
 .title-container {
   display: -webkit-box;
@@ -497,10 +501,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-container {
@@ -813,6 +823,10 @@ header {
   border-radius: 1rem;
 }
 
+.exp-ul li {
+  margin-bottom: 0.8rem;
+}
+
 .exp-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,6 +1011,7 @@ footer {
 
 .icon {
   margin-inline: 0.5rem;
+  width: 1.2rem;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -1269,6 +1284,12 @@ footer {
   }
   .skills-icon-cotainer {
     margin-bottom: 3rem;
+  }
+  .exp-ul {
+    padding: 0.5rem;
+  }
+  .exp-ul li {
+    margin-bottom: 0.8rem;
   }
 }
 
