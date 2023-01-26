@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- SPLASH -->
-		<!-- <div class="splash" id="splash">
+		<div class="splash" id="splash">
 			<div id="progress" class="progress-container">
 				<div class="progress">
 					<div class="progress-value"></div>
@@ -29,7 +29,8 @@
 				</div>
 			</div>
 			<canvas id="matrix" class="matrix"></canvas>
-		</div> -->
+		</div>
+		<div id="particles-js"></div>
 
 		<!-- HEADER -->
 		<header>
@@ -41,7 +42,7 @@
 						<li><a id="navLink" tabindex="3" class="nav-link" href="#skills">Compétences</a></li>
 						<li><a id="navLink" tabindex="4" class="nav-link" href="#exp">Experience</a></li>
 						<li><a id="navLink" tabindex="5" class="nav-link" href="#school">Diplômes</a></li>
-						<li><a id="navLink" tabindex="6" class="nav-link" href="#contact">Une Question ?</a></li>
+						<!-- <li><a id="navLink" tabindex="6" class="nav-link" href="#contact">Une Question ?</a></li> -->
 					</ul>
 				</nav>
 				<div class="burger-container">
@@ -609,7 +610,7 @@
 				</section>
 
 				<!-- CONTACT -->
-				<section id="contact" class="contact">
+				<!-- <section id="contact" class="contact">
 					<div class="title-container">
 						<div class="line-div"></div>
 						<h2>Une Question ?</h2>
@@ -621,11 +622,11 @@
 							<input required placeholder="votre email" name="email" id="email" type="email" />
 							<input required placeholder="l'objet de votre message" name="subject" id="subject" type="text" />
 							<textarea required placeholder="votre message . . . " name="message" id="message" rows="10"></textarea>
-							<input class="submit-button" id="submitButton" value="envoyer" type="submit" />
+							<input disabled class="submit-button" id="submitButton" value="envoyer" type="submit" />
 							<div id="submitSpinner" class="lds-ring display-none"><div></div><div></div><div></div><div></div></div>
 						</form>
 					</div>
-				</section>
+				</section> -->
 			</article>
 		</main>
 
@@ -662,5 +663,8 @@
 			</button>
 		</div>
 	</body>
+	<script src="./JS/lib/particles.js"></script>
+	<script src="./JS/lib/app.js"></script>
+	<script src="./JS/animation.js"></script>
 	<script src="./JS/index.js" lang="javascript"></script>
 </html>

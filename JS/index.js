@@ -99,7 +99,6 @@ const sendEmail = async (emailData) => {
 		headers: {
 			Accept: "application/json",
 			"Content-Type": "application/json",
-			"api-key": "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",
 		},
 		body: JSON.stringify(emailData),
 	});
@@ -149,23 +148,6 @@ const loader = {
 		spinner.classList.add("display-none");
 	},
 };
-
-window.addEventListener('DOMContentLoaded', () => {
-	const particles = document.createElement('div');
-	particles.id = 'particles-js'
-	
-	const animationScript = document.createElement('script');
-	animationScript.src = './JS/lib/app.js';
-
-	const animLibMinScript = document.createElement('script');
-	animLibMinScript.src = './JS/lib/particles.min.js';
-	
-	const animLibScript = document.createElement('script');
-	animLibScript.src = './JS/lib/particles.js';
-
-	document.body.prepend(particles);
-	document.body.append(animLibMinScript, animLibScript, animationScript);
-})
 
 toaster.closeIcon.addEventListener("click", () => {
 	toaster.close();

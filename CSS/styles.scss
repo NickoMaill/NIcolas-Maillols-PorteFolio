@@ -467,37 +467,37 @@ header {
 	animation: slideInRight 12.5s;
 }
 
-// @keyframes slideInLeft {
-// 	from {
-// 		margin-left: 200%;
-// 		opacity: 0;
-// 	}
+@keyframes slideInLeft {
+	from {
+		margin-left: 200%;
+		opacity: 0;
+	}
 
-// 	80% {
-// 		margin-left: 200%;
-// 		opacity: 1;
-// 	}
+	80% {
+		margin-left: 200%;
+		opacity: 1;
+	}
 
-// 	to {
-// 		margin-left: 0;
-// 	}
-// }
+	to {
+		margin-left: 0;
+	}
+}
 
-// @keyframes slideInRight {
-// 	from {
-// 		margin-right: 200%;
-// 		opacity: 0;
-// 	}
+@keyframes slideInRight {
+	from {
+		margin-right: 200%;
+		opacity: 0;
+	}
 
-// 	80% {
-// 		margin-right: 200%;
-// 		opacity: 1;
-// 	}
+	80% {
+		margin-right: 200%;
+		opacity: 1;
+	}
 
-// 	to {
-// 		margin-right: 0;
-// 	}
-// }
+	to {
+		margin-right: 0;
+	}
+}
 
 .photo-container {
 	display: flex;
@@ -511,21 +511,21 @@ header {
 	animation: slideDown 12.5s;
 }
 
-// @keyframes slideDown {
-// 	from {
-// 		margin-top: 100%;
-// 		opacity: 0;
-// 	}
+@keyframes slideDown {
+	from {
+		margin-top: 100%;
+		opacity: 0;
+	}
 
-// 	80% {
-// 		opacity: 1;
-// 		margin-top: 100%;
-// 	}
+	80% {
+		opacity: 1;
+		margin-top: 100%;
+	}
 
-// 	to {
-// 		margin-top: 0;
-// 	}
-// }
+	to {
+		margin-top: 0;
+	}
+}
 
 .exp,
 .school-part,
@@ -534,19 +534,19 @@ header {
 	animation: showContent 13.5s;
 }
 
-// @keyframes showContent {
-// 	from {
-// 		opacity: 0;
-// 	}
+@keyframes showContent {
+	from {
+		opacity: 0;
+	}
 
-// 	80% {
-// 		opacity: 0;
-// 	}
+	80% {
+		opacity: 0;
+	}
 
-// 	to {
-// 		opacity: 1;
-// 	}
-// }
+	to {
+		opacity: 1;
+	}
+}
 
 .intro-text {
 	font-size: 2rem;

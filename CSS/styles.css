@@ -593,6 +593,62 @@ header {
           animation: slideInRight 12.5s;
 }
 
+@-webkit-keyframes slideInLeft {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    margin-left: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    margin-right: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-right: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    margin-right: 200%;
+    opacity: 0;
+  }
+  80% {
+    margin-right: 200%;
+    opacity: 1;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
 .photo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,12 +666,64 @@ header {
           animation: slideDown 12.5s;
 }
 
+@-webkit-keyframes slideDown {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
 .exp,
 .school-part,
 .projects,
 .skills {
   -webkit-animation: showContent 13.5s;
           animation: showContent 13.5s;
+}
+
+@-webkit-keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .intro-text {
