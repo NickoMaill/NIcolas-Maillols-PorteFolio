@@ -576,10 +576,10 @@ header {
 
 .project-part {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	// flex-wrap: wrap;
+	// align-items: center;
+	flex-wrap: wrap;
 }
 
 .project-container {
@@ -597,6 +597,7 @@ header {
 .gif-container {
 	img {
 		width: 25rem;
+		height: 10rem;
 	}
 }
 
