@@ -153,23 +153,23 @@ toaster.closeIcon.addEventListener("click", () => {
 	toaster.close();
 });
 
-form.addEventListener("submit", async (e) => {
-	e.preventDefault();
-	loader.on(submitSpinner);
-	submitButton.classList.add("display-none");
+// form.addEventListener("submit", async (e) => {
+// 	e.preventDefault();
+// 	loader.on(submitSpinner);
+// 	submitButton.classList.add("display-none");
 
-	await sendEmail(verifyInput().customer);
-	await sendEmail(verifyInput().alertMessage)
-		.then((res) => {
-			if (res.messageId) {
-				inputArray.forEach((input) => (input.value = "", input.disabled = true));
-				toaster.success(successToast);
-			} else {
-				toaster.error(errorToast);
-				submitButton.classList.remove("display-none");
-			}
-		})
-		.finally(() => {
-			loader.off(submitSpinner);
-		});
-});
+// 	await sendEmail(verifyInput().customer);
+// 	await sendEmail(verifyInput().alertMessage)
+// 		.then((res) => {
+// 			if (res.messageId) {
+// 				inputArray.forEach((input) => (input.value = "", input.disabled = true));
+// 				toaster.success(successToast);
+// 			} else {
+// 				toaster.error(errorToast);
+// 				submitButton.classList.remove("display-none");
+// 			}
+// 		})
+// 		.finally(() => {
+// 			loader.off(submitSpinner);
+// 		});
+// });

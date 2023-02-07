@@ -93,7 +93,7 @@ html {
 *:not(ul) {
 	margin: 0;
 	padding: 0;
-	font-family: var(--main-font);
+	font-family: var(--main-font), Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@ li {
 }
 
 span {
-	font-family: var(--italic-font);
+	font-family: var(--italic-font), Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -329,7 +329,7 @@ nav {
 }
 
 .load-word {
-	font-family: var(--pixel-font);
+	font-family: var(--pixel-font), Arial, Helvetica, sans-serif;
 	font-size: 3rem;
 	color: var(--pixel-color);
 	overflow: hidden;
@@ -583,7 +583,7 @@ header {
 }
 
 .project-container {
-	display: flex;
+	display: flex; 
 	flex-direction: column;
 	width: 25rem;
 	height: fit-content;

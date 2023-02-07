@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" lang="scss" href="./CSS/styles.css" />
+		<meta name="description" content="Portfolio de Nicolas Maillols Développeur fullstack web et mobile"/>
+		<link rel="stylesheet" lang="css" href="./CSS/styles.min.css" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./public/public/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
@@ -15,7 +16,7 @@
 	<body>
 		<!-- UP PAGE BUTTON -->
 		<div>
-			<a href="#"><img class="up-page" src="./assets/images/svg/up.svg" alt="" /></a>
+			<a href="#"><img class="up-page" src="./assets/images/svg/up.svg" alt="return to up page" /></a>
 		</div>
 
 		<!-- SPLASH -->
@@ -37,17 +38,17 @@
 			<div class="navbar-container">
 				<nav class="nav-links-container" role="navigation">
 					<ul id="parent" class="parent closeNav">
-						<li><a id="navLink" tabindex="1" class="nav-link" href="#">A propos</a></li>
-						<li><a id="navLink" tabindex="2" class="nav-link" href="#projects">Projets</a></li>
-						<li><a id="navLink" tabindex="3" class="nav-link" href="#skills">Compétences</a></li>
-						<li><a id="navLink" tabindex="4" class="nav-link" href="#exp">Experience</a></li>
-						<li><a id="navLink" tabindex="5" class="nav-link" href="#school">Diplômes</a></li>
+						<li><a aria-label="naviguer vers la présentation" title="présentation" id="navLink" class="nav-link" href="#">A propos</a></li>
+						<li><a aria-label="naviguer vers les projets" title="projets" id="navLink" class="nav-link" href="#projects">Projets</a></li>
+						<li><a aria-label="naviguer vers les compétences" title="compétences" id="navLink" class="nav-link" href="#skills">Compétences</a></li>
+						<li><a aria-label="naviguer vers les experiences" title="experiences" id="navLink" class="nav-link" href="#exp">Experience</a></li>
+						<li><a aria-label="naviguer vers les diplômes" title="diplômes" id="navLink" class="nav-link" href="#school">Diplômes</a></li>
 						<!-- <li><a id="navLink" tabindex="6" class="nav-link" href="#contact">Une Question ?</a></li> -->
 					</ul>
 				</nav>
 				<div class="burger-container">
 					<h2 class="logo">NM</h2>
-					<button id="burger" class="burger">
+					<button id="burger" class="burger" title="menu">
 						<span class="bar"></span>
 					</button>
 				</div>
@@ -129,7 +130,7 @@
 								</div>
 
 								<div class="project-source">
-									<a class="project-button" target="_blank" rel="noreferrer" href="https://untelmusique.com"
+									<a aria-label="naviguer le site untelmusique.com" title="untelmusique.com" class="project-button" target="_blank" rel="noreferrer" href="https://untelmusique.com"
 										><img src="./assets/images/svg/earth.svg" alt="" />
 										<p>voir le site</p>
 									</a>
@@ -174,11 +175,11 @@
 								</div>
 
 								<div class="project-source">
-									<a class="project-button" target="_blank" rel="noreferrer" href="https://adrien-gogois.github.io/BlackJack-React/">
+									<a title="adrien-gogois.github.io/BlackJack-React/" aria-label="naviguer le site adrien-gogois.github.io/BlackJack-React/" class="project-button" target="_blank" rel="noreferrer" href="https://adrien-gogois.github.io/BlackJack-React/">
 										<img src="./assets/images/svg/earth.svg" alt="" />
 										<p>voir le site</p>
 									</a>
-									<a class="project-button" target="_blank" rel="noreferrer" href="https://github.com/Adrien-GOGOIS/BlackJack-React">
+									<a title="github.com" aria-label="naviguer le site github.com" class="project-button" target="_blank" rel="noreferrer" href="https://github.com/Adrien-GOGOIS/BlackJack-React">
 										<img src="./assets/images/svg/github.svg" alt="" />
 										<p>voir le code</p>
 									</a>
@@ -241,24 +242,24 @@
 						<div class="skills-container">
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/html-5.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/html-5.webp" alt=""/>
 									<span>HTML5</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/css.png" alt="" />
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/css.webp" alt="" />
 									<span>CSS3</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/javascript.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/javascript.webp" alt=""/>
 									<span>Javascript</span>
 								</div>
 							</div>
 
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/Bootstrap.png" alt="" />
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/Bootstrap.webp" alt="" />
 									<span>Bootstrap</span>
 								</div>
 
@@ -268,7 +269,7 @@
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/react.png" alt="" />
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/react.webp" alt="" />
 									<span>ReactJs</span>
 								</div>
 							</div>
@@ -280,80 +281,80 @@
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/vuejs.png" alt="" />
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/vuejs.webp" alt="" />
 									<span>VueJs</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/nodejs.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/nodejs.webp" alt=""/>
 									<span>NodeJs</span>
 								</div>
 							</div>
 
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/express.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/express.webp" alt=""/>
 									<span>ExpressJs</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/postgre.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/postgre.webp" alt=""/>
 									<span>PostgreSQL</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/mongo.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/mongo.webp" alt=""/>
 									<span>MongoDB</span>
 								</div>
 							</div>
 
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/git.png" alt="" />
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/git.webp" alt="" />
 									<span>Git</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon github" src="./assets/images/icons/github.png" alt=""/>
+									<img loading="lazy" class="skill-icon github" src="./assets/images/icons/github.webp" alt=""/>
 									<span>Github</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/mysql.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/mysql.webp" alt=""/>
 									<span>MySQL</span>
 								</div>
 							</div>
 
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/gitlab.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/gitlab.webp" alt=""/>
 									<span>GitLab</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/docker.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/docker.webp" alt=""/>
 									<span>Docker</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/typescript.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/typescript.webp" alt=""/>
 									<span>TypeScript</span>
 								</div>
 							</div>
 
 							<div class="skills-group">
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/FAUST.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/FAUST.webp" alt=""/>
 									<span>FAUST</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/supercollider.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/supercollider.webp" alt=""/>
 									<span>Supercollider</span>
 								</div>
 
 								<div class="skills-icon-cotainer">
-									<img loading="lazy" class="skill-icon" src="./assets/images/icons/pureData.png" alt=""/>
+									<img loading="lazy" class="skill-icon" src="./assets/images/icons/pureData.webp" alt=""/>
 									<span>PureData</span>
 								</div>
 							</div>
@@ -584,24 +585,24 @@
 		<!-- FOOTER -->
 		<footer>
 			<div class="title" id="title">
-				<a href="#">
+				<a title="retour" aria-label="revenir en haut de la page" href="#">
 					<p>Nicolas Maillols</p>
 				</a>
 			</div>
 			<div class="icon-container">
-				<a href="https://www.linkedin.com/in/nicolasmaillols/" target="_blank" rel="noreferrer">
-					<img loading="lazy" class="icon" src="./assets/images/svg/linkedin.svg" alt="icône instagram" />
+				<a aria-label="naviguer vers ma page linkedin" title="linkedin" href="https://www.linkedin.com/in/nicolasmaillols/" target="_blank" rel="noreferrer">
+					<img loading="lazy" class="icon" src="./assets/images/svg/linkedin.svg" alt="icône linkedin" />
 				</a>
-				<a href="https://github.com/NickoMaill" target="_blank" rel="noreferrer">
-					<img loading="lazy" class="icon" src="./assets/images/svg/github.svg" alt="icône instagram" />
+				<a aria-label="naviguer vers ma page github" title="github" href="https://github.com/NickoMaill" target="_blank" rel="noreferrer">
+					<img loading="lazy" class="icon" src="./assets/images/svg/github.svg" alt="icône github" />
 				</a>
-				<a href="https://www.instagram.com/nicko_maill/" target="_blank" rel="noreferrer">
+				<a aria-label="naviguer vers ma page instagram" title="instagram" href="https://www.instagram.com/nicko_maill/" target="_blank" rel="noreferrer">
 					<img loading="lazy" class="icon" src="./assets/images/svg/instagram.svg" alt="icône instagram" />
 				</a>
-				<a href="https://nickomprod.book.fr/" target="_blank" rel="noreferrer">
+				<a aria-label="naviguer vers mon book musique" title="book musique" href="https://nickomprod.book.fr/" target="_blank" rel="noreferrer">
 					<img loading="lazy" class="icon" src="./assets/images/svg/book.svg" alt="icône book.fr" />
 				</a>
-				<a href="mailto:nicomaillols@gmail.com" target="_blank" rel="noreferrer">
+				<a aria-label="m'envoyer un email" title="envoyer un email" href="mailto:nicomaillols@gmail.com" target="_blank" rel="noreferrer">
 					<img loading="lazy" class="icon" src="./assets/images/svg/mail.svg" alt="icône mail" />
 				</a>
 			</div>
@@ -614,8 +615,8 @@
 			</button>
 		</div>
 	</body>
-	<script src="./JS/lib/particles.js"></script>
+	<script src="./JS/lib/particles.min.js"></script>
 	<script src="./JS/lib/app.js"></script>
-	<script src="./JS/animation.js"></script>
-	<script src="./JS/index.js" lang="javascript"></script>
+	<script src="./JS/animation.min.js"></script>
+	<script src="./JS/index.min.js" lang="javascript"></script>
 </html>
